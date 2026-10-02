@@ -1,0 +1,10 @@
+function <@/optest/fornum.lua:0-0> upvals=0 nparams=0 vararg=2 stack=5
+  [   0] LOADK 0 0   ; 0
+  [   1] LOADK 1 1   ; 1
+  [   2] LOADK 2 2   ; 3
+  [   3] LOADK 3 1   ; 1
+  [   4] FORPREP 1 1   ; -> 6
+  [   5] ADD 0 0 4   ; R0=R0 ADD R4
+  [   6] FORLOOP 1 -2   ; -> 5
+  [   7] RETURN 0 2 0   ; return R0..R0
+  [   8] RETURN 0 1 0   ; return R0..R-1

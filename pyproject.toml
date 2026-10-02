@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lua_disasm_miwifi"
+version = "1.0.0"
+description = "Parser, string decoder and disassembler for Xiaomi 'Fate' Lua bytecode"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "miwifi-tools" }]
+keywords = ["xiaomi", "miwifi", "router", "lua", "bytecode", "disassembler", "reverse-engineering"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+  "Topic :: Software Development :: Disassemblers",
+]
+# Pure standard library: no runtime dependencies.
+dependencies = []
+
+[project.scripts]
+fate = "fate.cli:main"
+
+[tool.setuptools]
+packages = ["fate"]

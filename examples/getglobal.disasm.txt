@@ -1,0 +1,4 @@
+function <@/optest/getglobal.lua:0-0> upvals=0 nparams=0 vararg=2 stack=2
+  [   0] GETGLOBAL 0 0   ; 'g'
+  [   1] CALL 0 1 1   ; R0..=R0(R1..R0)
+  [   2] RETURN 0 1 0   ; return R0..R-1
